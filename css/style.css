@@ -74,6 +74,15 @@ footer{
     background-image: url(../assets/images/Xtreeb1.jpg); 
 }
 
+#SS{
+    background-image: url(../assets/images/SouthernSunrise.png); 
+}
+
+#IOL{
+    background-image: url(../assets/images/IllusionofLife.png); 
+}
+
+
 
 .flex-item a:hover{
     color:#b2b2b2;
