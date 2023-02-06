@@ -82,6 +82,10 @@ footer{
     background-image: url(../assets/images/IllusionofLife.png); 
 }
 
+#PS {
+    background-image:url(../assets/images/plant-scrape-1.png);
+}
+
 
 
 .flex-item a:hover{
