@@ -11,6 +11,8 @@ h1{
 
 p{
     font-size: 16px;
+    width:100%;
+    max-width:500px;
 }
 
 header{
@@ -31,23 +33,24 @@ footer{
     min-height:100px;
 }
 
+nav{
+    padding:10px 3%;
+}
 
-/* Flex layouts are one of the easier ways to style responsive layouts that work on all devices */
-/* https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox */
+
 
 .flex-container{
-    display: flex; /* all children will now be flex items */
-    flex-direction: row; /* other option is column */
-    flex-wrap: wrap; /* means the children will wrap to a new line */
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .flex-item{
     display: flex;
-    /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
     flex-grow: 0;
     flex-shrink: 0;
-    flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
-    box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+    flex-basis: 25%; 
+    box-sizing: border-box;
     padding: 5px;
 }
 
@@ -64,12 +67,10 @@ footer{
     text-align: center;
     text-decoration: none;
     color:#0e0e0e;
-    transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+    transition: all 0.2s;
+
 }
 
-/* want a different background image for each project? */
-/* try give each a tag a unique id in your HTML and then set different background images here*/
-/* EXAMPLE CSS: won't work if you just un-comment this:*/
 #ASD{
     background-image: url(../assets/images/Xtreeb1.jpg); 
 }
@@ -91,6 +92,11 @@ footer{
         background-image:url(../assets/images//protein\ visualise.png);
     
 }
+#SR {
+    
+    background-image:url(../assets/images/searise.png);
+
+}
 
 
 
@@ -107,7 +113,32 @@ footer{
    padding:5px 10px;
 }
 
+.page-img {
+    width:100%;
+    max-width:500px;
+    height: auto;
+}
 
+.material {
+    color:#b2b2b2;
+    font-size: 10px;
+}
+
+.responsive-video {
+   
+        position: relative;
+        width: 60%; /* adjust this and the padding-top to change how big it is*/
+        height: 0;
+        padding-top: 45%;
+    
+}
+.responsive-video iframe{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+}
 
 /* Media Queries for responsive design */
 
